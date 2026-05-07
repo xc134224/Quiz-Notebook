@@ -16,14 +16,16 @@
 
 ## 环境要求
 
-需要先安装 Node.js，安装后命令行中应能使用：
+Windows 用户可以直接双击 `start-dev.bat` 启动。
+
+如果电脑没有安装 Node.js，脚本会自动下载便携版 Node.js 到项目内的 `.local-node/`，再安装依赖。
+
+如果你想手动用命令行启动，电脑里需要能使用：
 
 ```bash
 node -v
 npm -v
 ```
-
-推荐使用 Node.js LTS 版本。
 
 ## 启动方式
 
@@ -38,10 +40,11 @@ start-dev.bat
 脚本会自动执行：
 
 1. 进入项目目录。
-2. 检查是否存在 `npm`。
-3. 如果没有 `node_modules`，自动执行 `npm install`。
-4. 启动开发服务。
-5. 自动打开 `http://localhost:5173`。
+2. 优先使用系统里的 `npm`。
+3. 如果没有 `npm`，自动下载便携版 Node.js。
+4. 如果没有 `node_modules`，自动执行 `npm install`。
+5. 启动开发服务。
+6. 自动打开 `http://localhost:5173`。
 
 ### 命令行启动
 

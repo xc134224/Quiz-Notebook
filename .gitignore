@@ -1,5 +1,8 @@
 # Dependencies
 node_modules/
+.local-node/
+.local-node.zip
+node-v*-win-x64/
 
 # Build outputs
 dist/
